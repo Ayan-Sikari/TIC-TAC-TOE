@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Caveat";
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+h1{
+    color:rgb(57, 14, 209);
+    text-align: center;
+    font-size: 48px;
+    padding: 20px;
+}
+
+.playerX{
+    color:chartreuse;
+}
+
+.playerO{
+    color:rgb(255, 255, 0);
+}
+
+.container{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 40px 20px;
+}
+
+.tiles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tile{
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    border: 1px solid rgb(212, 204, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    color: #5249b6;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.hide{
+    display: none;
+}
+
+.state{
+    color: blue;
+    text-align: center;
+}
+
+.reset{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.RESET{
+    color: red;
+    background-color: aquamarine;
+    width:100px;
+    font-size: 29px;
+    font-weight: 700;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease-in-out;
+}
+
+.RESET:hover{
+    background-color: aqua;
+    color: green;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px 2px rgb(67, 79, 117);
+}
+
+::selection{
+    color: rgb(162, 0, 255);
+    background-color: rgb(205, 255, 80);
+}
